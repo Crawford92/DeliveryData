@@ -1,5 +1,12 @@
 # README
 
+## TODO:
+- Rename files/repo
+- Update readme with naming conventions
+- PYTHON: Pull restaurant names from Dashes and Dash v1, alphabetize, check for typos
+- Every day add data to Dashes and Days, every Monday add data to Weeks, convert sheets into csv and update files in repo
+	- Low priority, utilize Sheets API to pull data in automatically instead of weekly CSV update
+
 ## NOTES
 - Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
 - Earnings only shows us stacks that are offered as stacks, an offer that is in addition to an existing dash must be dealt with manually
@@ -34,13 +41,9 @@
 - Worst paying restaurant (again, normalized)
 - Active time to dash time ratio across days (which has best/worst ratio, need to normalize across hours worked [thursday 1-3pm is different than thursday 5-8pm])
 
-## TODO:
-- PYTHON: Pull restaurant names from Dashes and Dash v1, alphabetize, check for typos
-- Every day add data to Dashes and Days, every Monday add data to Weeks, convert sheets into csv and update files in repo
-	- Low priority, utilize Sheets API to pull data in automatically instead of weekly CSV update
 
 
-
+# CHANGE LOG
 
 ## v2.0
 - In the first 369 orders, two people tipped AFTER delivery instead of before, so we can just ignore that column and count it as tips
