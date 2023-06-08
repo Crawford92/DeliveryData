@@ -17,7 +17,7 @@
 ## TARGET INSIGHTS
 ### TIER 1
 - Highest tipping vs lowest tipping restaurants
-- Days with best $/hr - Times with best $/hr
+- Days with best pay/hr - Times with best pay/hr
 - Overall average hourly rate
 - Overall average tip (and avg tip excluding non tips) [and tip vs non tip ratio, overall and per day of week and per hour of day, and I guess per restaurant too?]
 - overall pay/dash time, overall pay/active time, per day
@@ -36,7 +36,8 @@
 
 ## TODO:
 - PYTHON: Pull restaurant names from Dashes and Dash v1, alphabetize, check for typos
-- Every day add data to Dashes and Days, every Monday add data to Weeks
+- Every day add data to Dashes and Days, every Monday add data to Weeks, convert sheets into csv and update files in repo
+	- Low priority, utilize Sheets API to pull data in automatically instead of weekly CSV update
 
 
 
@@ -90,6 +91,7 @@
 - Formula for Tip is sum of all Tip from Days matching the Dates of the element
 - Updated formula in Deliveries to get the sum of all deliveries from Days matching the element
 - Added Version attribute for ease of filtering later
-
+### Misc
+- Added .gitignore and configured for *.csv, *.Rhistory *checkpoints
 
 
