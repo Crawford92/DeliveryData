@@ -9,14 +9,15 @@
 - Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 
 ## NOTES
-- Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
-- If I forget to track the end time we use start time estimate, if I forget to track the start time, we want to drop the row for time/miles purposes
-- DAYS: Offers and Deliveries - Offers can include single deliveries or a stack of two
-- Natural stacks are offered as a stack, delayed stacks are offers that get other offers added
-- DAYS: Active time represents the total time spent on deliveries, shift time (sometimes referenced as dash time) is the total length of a working shift
 - Attributes appear in this document surrounded by single quotes 'like this'
 - Sheets appear in this document italicized *like this*
 - Things I want to remember later are in bold **like this**
+- Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
+- If I forget to track the end time we use start time estimate, if I forget to track the start time, we want to drop the row for time/miles purposes
+- *Days*: Offers and Deliveries - Offers can include single deliveries or a stack of two
+- Natural stacks are offered as a stack, delayed stacks are offers that get other offers added
+- *Days*: Active time represents the total time spent on deliveries, shift time (sometimes referenced as dash time) is the total length of a working shift
+
 
 ## IDEAS
 - For some of these metrics, we want to exclude restaurants that have only shown up once
@@ -58,17 +59,17 @@
 - Updated previous stacked orders from v1.0 to include natural stacks
 
 ## v3.0
-- Updated Days to include 'Offers' attribute and assigned values to 'Offers' attribute
-- Deliveries changed to DeliveriesOld (which includes v1 and v2), Deliveries is v3
+- Updated *Days* to include 'Offers' attribute and assigned values to 'Offers' attribute
+- *Deliveries* changed to *DeliveriesOld* (which includes v1 and v2), *Deliveries* is v3
 - Renamed Cornerstone Network, Inc. to Burger King, because it was Burger King
-- Updated Days sheet attributes - 'Start', 'End' to 'Start(24)', 'End(24)'. Active/shift time changed from time format to duration format hh:mm, attribute + (h:m)
+- Updated *Days* attributes - 'Start', 'End' to 'Start(24)', 'End(24)'. Active/shift time changed from time format to duration format hh:mm, attribute + (h:m)
 
 ## v3.1 - Ease of Entry Updates
-### Deliveries
+### *Deliveries*
 - Changed attribute order to 'Total', 'Pay', 'Tip', 'Peak Bonus', for ease of entry
 - Changed attribute order to 'Start Time', 'Miles', 'End Time', for ease of entry
 - Changed 'Miles' from int and float to all float
-- Stacked orders show total distance instead of averaged distance for ease of entry **NOTE: base pay is still averaged, duration and miles are not**
+- Stacked orders show total distance instead of averaged distance for ease of entry **base pay is still averaged, duration and miles are not**
 - Replaced "-" from 'Peak Bonus' with "$0.00"
 - Updated formula in 'Total' to include 'Peak Bonus' for all elements 
 ### DeliveriesOld
