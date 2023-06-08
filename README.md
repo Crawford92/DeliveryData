@@ -1,10 +1,10 @@
-### dashstats
+# README
 
 ## NOTES
--Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
--Earnings only shows us stacks that are offered as stacks, an offer that is in addition to an existing dash must be dealt with manually
--If I forget to track the end time we use start time estimate, if I forget to track the start time, we might just want to drop the row for time/miles purposes
--DAYS: Offers and Deliveries - Offers can include single deliveries or a stack of two
+- Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
+- Earnings only shows us stacks that are offered as stacks, an offer that is in addition to an existing dash must be dealt with manually
+- If I forget to track the end time we use start time estimate, if I forget to track the start time, we might just want to drop the row for time/miles purposes
+- DAYS: Offers and Deliveries - Offers can include single deliveries or a stack of two
 
 ## IDEAS
 -for some of these metrics, we want to exclude restaurants that have only shown up once
