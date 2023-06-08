@@ -1,7 +1,6 @@
 # README
 
 ## TODO:
-- Update readme with naming conventions
 - High priority: Pull restaurant names from Delivery csvs, alphabetize, check for typos
 - High priority: Anonymize restaurant name data
 - Medium priority: Tier 1 insights complete
@@ -72,25 +71,25 @@
 - Stacked orders show total distance instead of averaged distance for ease of entry **base pay is still averaged, duration and miles are not**
 - Replaced "-" from 'Peak Bonus' with "$0.00"
 - Updated formula in 'Total' to include 'Peak Bonus' for all elements 
-### DeliveriesOld
-- Changed attribute order to 'Total', 'Pay', 'Tip', 'Peak Bonus' (to mirror change to Deliveries)
+### *DeliveriesOld*
+- Changed attribute order to 'Total', 'Pay', 'Tip', 'Peak Bonus' (to mirror change to *Deliveries*)
 - Replaced "-" from 'Peak Bonus' with "$0.00"
 - Updated formula in 'Total' to include 'Peak Bonus' for all elements
-### Days
+### *Days*
 - Renamed 'Pay' to 'Total', added 'Base' and 'Tip' attributes
-- Formula for 'Total' is sum of all 'Total' from Deliveries matching the date of the element 
-- Formula for 'Tip' is sum of all 'Tip' from Deliveries matching the date of the element
+- Formula for 'Total' is sum of all 'Total' from *Deliveries* matching the date of the element 
+- Formula for 'Tip' is sum of all 'Tip' from *Deliveries* matching the date of the element
 - Formula for 'Base' is 'Total'-'Tip', in order to more easily capture Peak and Base pay together
 - Added 'Version' attribute for ease of filtering 
 - Added 'Pauses' attribute to store string representing pauses by start and end time, set Pauses = Version for days before record of pause time available, Pauses = 0 when no pause occured in shift
-### Weeks
+### *Weeks*
 - Renamed 'Pay' to 'Base'
 - Moved 'Total' to right of values
 - Added 'Pre Total' to represent 'Total' before 'Adjustment' and 'Other' pay
 - Formula for 'Pre Total' is sum of 'Base' and 'Tip' for that element
-- Formula for 'Base' is sum of all 'Base' from Days matching the 'Dates' of the element
-- Formula for 'Tip' is sum of all 'Tip' from Days matching the 'Dates' of the element
-- Updated formula in 'Deliveries' to get the sum of all deliveries from Days matching the element
+- Formula for 'Base' is sum of all 'Base' from *Days* matching the 'Dates' of the element
+- Formula for 'Tip' is sum of all 'Tip' from *Days* matching the 'Dates' of the element
+- Updated formula in 'Deliveries' to get the sum of all deliveries from *Days* matching the element
 - Added 'Version' attribute for ease of filtering later
 ### Misc
 - Added .gitignore and configured for *.csv, *.Rhistory *checkpoints
