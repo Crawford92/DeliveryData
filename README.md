@@ -1,12 +1,12 @@
 ### dashstats
 
-##NOTES
+## NOTES
 -Stacked orders have base pay averaged across items in stack (2 items, 6 dollar base, 3 dollars each), but not distance or duration.
 -Earnings only shows us stacks that are offered as stacks, an offer that is in addition to an existing dash must be dealt with manually
 -If I forget to track the end time we use start time estimate, if I forget to track the start time, we might just want to drop the row for time/miles purposes
 -DAYS: Offers and Deliveries - Offers can include single deliveries or a stack of two
 
-##IDEAS
+## IDEAS
 -for some of these metrics, we want to exclude restaurants that have only shown up once
 --df2 = df[df['Restaurants'].duplicated() == True] 
 --we might actually want to get a unique name count and exclude restaurants that are less than some chosen value
@@ -14,7 +14,7 @@
 -Incorporate daily mileage data (miles driven vs hours or total miles vs delivery miles, etc)
 -Annonymize restaurant names for public list .... A0-Z9 is 260 should be enough
 
-##TARGET INSIGHTS
+## TARGET INSIGHTS
 --TIER 1--
 -Highest tipping vs lowest tipping restaurants
 -Days with best $/hr - Times with best $/hr
@@ -34,14 +34,14 @@
 -Worst paying restaurant (again, normalized)
 -Active time to dash time ratio across days (which has best/worst ratio, need to normalize across hours worked [thursday 1-3pm is different than thursday 5-8pm])
 
-##TODO:
+## TODO:
 PYTHON: Pull restaurant names from Dashes and Dash v1, alphabetize, check for typos
 Every day add data to Dashes and Days, every Monday add data to Weeks
 
 
 
 
-##v2.0
+## v2.0
 -In the first 369 orders, two people tipped AFTER delivery instead of before, so we can just ignore that column and count it as tips
 -We're gonna add an ID column equal to the row as a way of tracking orders that are stacked with other orders
 --And a stacked column, so if order 200 is stacked with 201 then the stacked attribute for that element will read 201, and 201's stacked attribute will read 200
@@ -50,7 +50,7 @@ Every day add data to Dashes and Days, every Monday add data to Weeks
 -Would be interesting to collect time data, its unavailable from the deliveries data but I could manually track it at the time of order acceptance
 -Updated previous stacked orders from v1.0
 
-##v3.0
+## v3.0
 Time and mileage estimates per delivery
 -estimates vary, mileage is pretty accurate baring abnormal traffic phenomena, ETA given usually more than necessary, as of 5/30 I have 95% on time or early, mostly early but I can't represent that with the given data just yet
 --Could grab the time of accept and the estimated mileage, and then grab the time of delivery as well, and just use the estimates for the first few days of v3.0
@@ -62,7 +62,7 @@ Time and mileage estimates per delivery
 -Miles for stacked orders are average of distance
 -Updated Days sheet attributes - Start, End to Start(24), End(24). Active/dash time changed from time format to duration format hh:mm, attribute + (h:m)
 
-##v3.1 - Ease of Entry Updates
+## v3.1 - Ease of Entry Updates
 -Dashes
 --:changed attribute order to Total, Pay, Tip, Peak Bonus, for ease of entry
 --: changed attribute order to Start Time, Miles, End Time, for ease of entry
