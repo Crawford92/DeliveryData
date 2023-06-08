@@ -8,8 +8,8 @@
 
 ## IDEAS
 - for some of these metrics, we want to exclude restaurants that have only shown up once
--- df2 = df[df['Restaurants'].duplicated() == True] 
--- we might actually want to get a unique name count and exclude restaurants that are less than some chosen value
+- - df2 = df[df['Restaurants'].duplicated() == True] 
+- - we might actually want to get a unique name count and exclude restaurants that are less than some chosen value
 - Weather, either temp or clear/cloudy/rainy vs pay metrics
 - Incorporate daily mileage data (miles driven vs hours or total miles vs delivery miles, etc)
 - Annonymize restaurant names for public list .... A0-Z9 is 260 should be enough
