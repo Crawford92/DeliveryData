@@ -96,3 +96,6 @@
 - Renamed files and repo
 - Reworded readme to not use source app specific wording whenever practical
 
+## v3.2 - A New Hope
+- Updated *DeliveriesOld* (ID=269).Version = 1, because it was blank
+
