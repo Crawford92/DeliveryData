@@ -1,7 +1,7 @@
 # README
 
 ## TODO:
-- High priority: Check attributes other than 'Restaurant Names' for input errors
+
 - High priority: Transform relevant *Deliveries* dataframe attributes to utilize the Datetime class for ease of later analysis
 - High priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
 - High priority: Function to convert string format "$##.##" to float
@@ -12,6 +12,7 @@
 - Low priority: Tier 2 insights complete
 - Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 - Completed (6/13): Pull restaurant names from Delivery csvs, alphabetize, check for typos
+- Complted (6/16): Check attributes other than 'Restaurant Names' for input errors
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
