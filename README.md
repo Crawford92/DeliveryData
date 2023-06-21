@@ -9,7 +9,9 @@
 - High priority: Add *GPS* to imports, pull unique ('Restaurant Name', 'Raw Data') pairs, export out to CSV
 - Medium priority: Check active/dash time from *Days* against *Weeks*
 - Medium priority: Tier 1 insights complete
-- Low priority: Tier 2 insights complete
+- Low priority: Resolve missing addresses
+- Low priority: Convert addresses to GPS coordinates
+- Low priority: Tier 2, 3, 4 insights complete
 - Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 - Completed (6/13): Pull restaurant names from Delivery csvs, alphabetize, check for typos
 - Complted (6/16): Check attributes other than 'Restaurant Names' for input errors
@@ -26,11 +28,7 @@
 
 
 ## IDEAS
-- For some of these metrics, we want to exclude restaurants that have only shown up once
-	- df2 = df[df['Restaurants'].duplicated() == True] 
-	- we might actually want to get a unique name count and exclude restaurants that are less than some chosen value
 - Weather, either temp or clear/cloudy/rainy vs pay metrics
-- Incorporate daily mileage data (miles driven vs hours or total miles vs delivery miles, etc)
 
 ## TARGET INSIGHTS
 ### TIER 1
@@ -57,6 +55,8 @@
 ### TIER 3
 - GPS Heatmap of pickup locations
 - Weather vs Pay metrics
+### TIER 4
+- How to make the most money
 
 
 
