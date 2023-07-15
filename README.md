@@ -2,19 +2,24 @@
 
 ## TODO:
 
-- High priority: Transform relevant *Deliveries* dataframe attributes to utilize the Datetime class for ease of later analysis
-- High priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
-- High priority: Function to convert string format "$##.##" to float
-- High priority: Function to get aggregate AVG or SUM values for 'Total', 'Tip', and 'Base' sorted high to low or low to high
-- High priority: Add *GPS* to imports, pull unique ('Restaurant Name', 'Raw Data') pairs, export out to CSV
+- High priority: Process RawData and GPS sheets to express current known values
+- High priority: Homogenize attribute naming scheme across worksheets
+- High priority: Function to calculate estimated adjusted pay per order (see notes)
+- High priority: Function to calculate 'active mileage' (see notes)
+- Medium priority: Function to take restaurant name as parameter and display insights
+- Medium priority: Completed visualizations listed in notes.txt
 - Medium priority: Check active/dash time from *Days* against *Weeks*
 - Medium priority: Tier 1 insights complete
+- Low proirity: Use GPS worksheet to determine Drive vs Marketplace, and any virtual restaurants 
+- Low priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
 - Low priority: Resolve missing addresses
 - Low priority: Convert addresses to GPS coordinates
 - Low priority: Tier 2, 3, 4 insights complete
-- Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 - Completed (6/13): Pull restaurant names from Delivery csvs, alphabetize, check for typos
-- Complted (6/16): Check attributes other than 'Restaurant Names' for input errors
+- Completed (6/16): Check attributes other than 'Restaurant Names' for input errors
+- Completed (7/13): Function to convert string format "$##.##" to float
+- Completed (7/13): Transform relevant *Deliveries* dataframe attributes to utilize the Datetime class for ease of later analysis
+- Completed (7/13): Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
@@ -56,6 +61,7 @@
 - GPS Heatmap of pickup locations
 - Weather vs Pay metrics
 ### TIER 4
+- Whether or not to accept an order, given new data from offer and historical data from deliveries
 - How to make the most money
 
 
