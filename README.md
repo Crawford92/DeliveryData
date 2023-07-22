@@ -8,7 +8,6 @@
 - High priority: Function to calculate 'active mileage' (see notes)
 - Medium priority: Function to take restaurant name as parameter and display insights
 - Medium priority: Completed visualizations listed in notes.txt
-- Medium priority: Check active/dash time from *Days* against *Weeks*
 - Medium priority: Tier 1 insights complete
 - Low proirity: Use GPS worksheet to determine Drive vs Marketplace, and any virtual restaurants 
 - Low priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
