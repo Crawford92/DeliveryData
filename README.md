@@ -59,6 +59,7 @@
 - Active time to shift time ratio across days (which has best/worst ratio, need to normalize across hours worked [thursday 1-3pm is different than thursday 5-8pm])
 ### TIER 3
 - GPS Heatmap of pickup locations
+	- Heatmap by average delivery total, filterable by hour or day of week
 - Weather vs Pay metrics
 ### TIER 4
 - Whether or not to accept an order, given new data from offer and historical data from deliveries
