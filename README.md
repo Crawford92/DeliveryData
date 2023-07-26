@@ -2,7 +2,6 @@
 
 ## TODO:
 
-- High priority: Process RawData and GPS sheets to express current known values
 - High priority: Update stats notebook to handle adjusted column names
 - High priority: Function to calculate estimated adjusted pay per order (see notes)
 - High priority: Function to calculate 'active mileage' (see notes)
@@ -20,6 +19,7 @@
 - Completed (7/13): Transform relevant *Deliveries* dataframe attributes to utilize the Datetime class for ease of later analysis
 - Completed (7/13): Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 - Completed (7/20): Homogenize attribute naming scheme across worksheets
+- Completed (7/26): Process RawData and GPS sheets to express current known values
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
