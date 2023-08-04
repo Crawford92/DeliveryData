@@ -2,17 +2,18 @@
 
 ## TODO:
 
-- High priority: Update stats notebook to handle adjusted column names
-- High priority: Function to calculate estimated adjusted pay per order (see notes)
-- High priority: Function to calculate 'active mileage' (see notes)
+- High priority: Create function to take average distance and duration for stacked deliveries
+- High priority: Preserve aggregated data for use across insights
+- High priority: Tier 1 insights complete
 - Medium priority: Function to take restaurant name as parameter and display insights
 - Medium priority: Completed visualizations listed in notes.txt
-- Medium priority: Tier 1 insights complete
 - Low proirity: Use GPS worksheet to determine Drive vs Marketplace, and any virtual restaurants 
 - Low priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
 - Low priority: Resolve missing addresses
 - Low priority: Convert addresses to GPS coordinates
 - Low priority: Tier 2, 3, 4 insights complete
+
+## DONE:
 - Completed (6/13): Pull restaurant names from Delivery csvs, alphabetize, check for typos
 - Completed (6/16): Check attributes other than 'Restaurant Names' for input errors
 - Completed (7/13): Function to convert string format "$##.##" to float
@@ -20,6 +21,9 @@
 - Completed (7/13): Low priority: utilize Sheets API to pull data in automatically instead of weekly CSV update
 - Completed (7/20): Homogenize attribute naming scheme across worksheets
 - Completed (7/26): Process RawData and GPS sheets to express current known values
+- Completed (7/29): Update stats notebook to handle adjusted column names
+- Completed (7/29): Function to calculate estimated adjusted pay per order
+- Completed (7/29): Function to calculate 'active mileage'
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
@@ -37,19 +41,20 @@
 
 ## TARGET INSIGHTS
 ### TIER 1
-- Highest tipping vs lowest tipping restaurants
-- Days with best pay/hr - Times with best pay/hr
-- Overall average hourly rate
-- Overall average tip (and avg tip excluding non tips) [and tip vs non tip ratio, overall and per day of week and per hour of day, and I guess per restaurant too?]
-- overall pay/shift time, overall pay/active time, per day
-- On tipped orders, tip to base pay ratio
-- Restaurant with closest tip to base pay ratio (not useful just kinda fun trivia)
-- Restaurants ranked by total pay, base, tip, also by avg pay, base, and tip
-- Most deliveries in a day, most tip pay in a day, most overall pay in a day, most miles, most hours (these aren't super interesting but why not)
-- Highest pay lowest distance vs lowest pay highest distance
-- Histograms for both tip and total values
-- Visualizations for which days and which hours worked
-- Best and worst 'Pre Total' vs 'Active Time' ratios
+- Hour + Day of Week (ex: 7pm Friday) with best $/hour
+- Tip:No Tip ratio by day of week
+
+- (DONE) Overall average tip, with and without untipped orders 
+- (DONE) Tip:No Tip ratio
+- (DONE) Days with best $/hour
+- (DONE) Overall average hourly rate
+- (DONE) Restaurants ranked by total and avg pay, base, tip
+- (DONE) Pre adjustment earnings / hours spent on deliveries, by week
+- (DONE) Average earned per delivery, by day of week 
+- (DONE) Average tip, by day of week 
+- (DONE) Average hourly pay, by day of week
+- (DONE) Highest total pay, base pay, tip, active time, dash time, deliveries, and distance, by day (except distance)
+- (DONE) Highest distance and delivery time, by order
 ### TIER 2
 - Days with most deliveries per active time (with some minimum of active time, 4 or 6 hours?)
 - Does peak pay reduce tip (do people tip less on peak pay deliveries - avg tip w/ and w/o peak, also avg tip during normally peak hours without peak bonus e.g. friday night tips w/ and w/o peak)
