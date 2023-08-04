@@ -42,12 +42,14 @@
 ## TARGET INSIGHTS
 ### TIER 1
 - Hour + Day of Week (ex: 7pm Friday) with best $/hour
-- Tip:No Tip ratio by day of week
-
+- Daily and weekly $/hour, visualized
+- Total pay (as base:tip:other ratio) by day of week, visualized
+- (DONE) Restaurants by delivery count
 - (DONE) Overall average tip, with and without untipped orders 
 - (DONE) Tip:No Tip ratio
 - (DONE) Days with best $/hour
 - (DONE) Overall average hourly rate
+- (DONE) Average delivery distance and duration
 - (DONE) Restaurants ranked by total and avg pay, base, tip
 - (DONE) Pre adjustment earnings / hours spent on deliveries, by week
 - (DONE) Average earned per delivery, by day of week 
@@ -56,18 +58,18 @@
 - (DONE) Highest total pay, base pay, tip, active time, dash time, deliveries, and distance, by day (except distance)
 - (DONE) Highest distance and delivery time, by order
 ### TIER 2
-- Days with most deliveries per active time (with some minimum of active time, 4 or 6 hours?)
-- Does peak pay reduce tip (do people tip less on peak pay deliveries - avg tip w/ and w/o peak, also avg tip during normally peak hours without peak bonus e.g. friday night tips w/ and w/o peak)
-- Tips/Pay by restaurant genre (have to come up with genre definition scheme)
-- Restaurant with greatest variance of overall pay and of tip, need to normalize because there's like 300 chick fil a orders
-- Worst paying restaurant (again, normalized)
-- Active time to shift time ratio across days (which has best/worst ratio, need to normalize across hours worked [thursday 1-3pm is different than thursday 5-8pm])
+- Average time between deliveries, by day of week
+- Do people tip less at end of month?
+- Earnings by restaurant genre (have to come up with genre definition scheme)
+- Restaurant with greatest variance of overall pay and of tip
+- Correlations
 ### TIER 3
 - GPS Heatmap of pickup locations
 	- Heatmap by average delivery total, filterable by hour or day of week
 - Weather vs Pay metrics
 ### TIER 4
 - Whether or not to accept an order, given new data from offer and historical data from deliveries
+- Most profitable route speculations
 - How to make the most money
 
 
