@@ -2,7 +2,7 @@
 
 ## TODO:
 
-- High priority: Create function to take average distance and duration for stacked deliveries
+
 - High priority: Function to handle active mileage (instead of handling through Sheets)
 - High priority: Tier 1 insights complete
 - Medium priority: Function to calculate average time between deliveries, by day
@@ -26,6 +26,7 @@
 - Completed (7/29): Function to calculate estimated adjusted pay per order
 - Completed (7/29): Function to calculate 'active mileage'
 - Completed (8/10): Preserve aggregated data for use across insights
+- Completed (8/14): Create function to take average distance and duration for stacked deliveries
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
