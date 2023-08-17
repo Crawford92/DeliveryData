@@ -1,9 +1,6 @@
 # README
 
 ## TODO:
-
-
-- High priority: Function to handle active mileage (instead of handling through Sheets)
 - High priority: Tier 1 insights complete
 - Medium priority: Function to calculate average time between deliveries, by day
 - Medium priority: Function to take restaurant name as parameter and display insights
@@ -26,7 +23,8 @@
 - Completed (7/29): Function to calculate estimated adjusted pay per order
 - Completed (7/29): Function to calculate 'active mileage'
 - Completed (8/10): Preserve aggregated data for use across insights
-- Completed (8/14): Create function to take average distance and duration for stacked deliveries
+- Completed (8/13): Create function to take average distance and duration for stacked deliveries
+- Completed (8/15): Function to handle active mileage (instead of handling through Sheets)
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
@@ -44,7 +42,7 @@
 
 ## TARGET INSIGHTS
 ### TIER 1
-- Hour + Day of Week (ex: 7pm Friday) with best $/hour
+- (DONE) Hour + Day of Week (ex: 7pm Friday) with best $/hour
 - Daily and weekly $/hour, visualized
 - Total pay (as base:tip:other ratio) by day of week, visualized
 - (DONE) Restaurants by delivery count
