@@ -1,10 +1,9 @@
 # README
 
 ## TODO:
-- High priority: Tier 1 insights complete
+
 - Medium priority: Function to calculate average time between deliveries, by day
 - Medium priority: Function to take restaurant name as parameter and display insights
-- Medium priority: Completed visualizations listed in notes.txt
 - Low proirity: Use GPS worksheet to determine Drive vs Marketplace, and any virtual restaurants 
 - Low priority: Function to anonymize restaurant name data within the *Deliveries* dataframe
 - Low priority: Resolve missing addresses
@@ -25,6 +24,8 @@
 - Completed (8/10): Preserve aggregated data for use across insights
 - Completed (8/13): Create function to take average distance and duration for stacked deliveries
 - Completed (8/15): Function to handle active mileage (instead of handling through Sheets)
+- Completed (8/17): Tier 1 insights complete
+- Completed (8/17): Completed visualizations listed in notes.txt
 
 ## NOTES
 - Attributes appear in this document surrounded by single quotes 'like this'
@@ -43,8 +44,8 @@
 ## TARGET INSIGHTS
 ### TIER 1
 - (DONE) Hour + Day of Week (ex: 7pm Friday) with best $/hour
-- Daily and weekly $/hour, visualized
-- Total pay (as base:tip:other ratio) by day of week, visualized
+- (DONE) Daily and weekly $/hour, visualized
+- (DONE) Hourly Rate, Avg Tip, Avg Delivery Total, by Day of Week, visualized
 - (DONE) Restaurants by delivery count
 - (DONE) Overall average tip, with and without untipped orders 
 - (DONE) Tip:No Tip ratio
